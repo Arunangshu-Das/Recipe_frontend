@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, rgba(108, 84, 84, 0.9), rgba(69, 52, 52, 0.35)),
-      url(./home.jpg) no-repeat;
+      url(../image/home.jpg) no-repeat;
     background-position: 50%;
     background-size: cover;
     /* background-position: center; */

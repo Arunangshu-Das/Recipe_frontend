@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Layout from '../components/Layout/Layout'
-import './home.css'
+import '../styles/home.css'
 
 const Home = () => {
   return (
-    <Layout>
       <section className='home' id='home'>
         <div className='content'>
           <h3>
@@ -15,7 +13,6 @@ const Home = () => {
           {/* <Link to=''>Explore now</Link> */}
         </div>
       </section>
-    </Layout>
   )
 }
 
