@@ -1,10 +1,18 @@
-import React from 'react'
+import React from "react";
+import "../styles/search.css";
 const Search = () => {
   return (
-    <div>
-      <h1>Search Recipe</h1>
-    </div>
-  )
-}
+      <div className="search">
+        <div className="search_wrap">
+          <div className="search_box">
+            <input type="text" className="input" placeholder="Search..." />
+            <div className="btn btn_common">
+              <i className="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  );
+};
 
-export default Search
+export default Search;
