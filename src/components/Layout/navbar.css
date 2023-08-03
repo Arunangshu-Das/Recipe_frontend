@@ -30,7 +30,7 @@ html{
     background: #c1690c;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding: 8px 7%;
     border-bottom: 0.2rem solid #ffc107;
     position: fixed;
@@ -39,23 +39,17 @@ html{
     right: 0;
     /* z-index: 1000; */
 }
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-}
+
 .logo{
     color: #ffc107;
 }
 
 ul{
     display: flex;
-    justify-content: flex-end;
     list-style: none;
     text-decoration: none;
 }
 ul li{
-    display: flex;
-    justify-content: flex-end;
     margin: 0 1rem;
     font-size: 1.6rem;
     list-style: none;
@@ -76,10 +70,16 @@ ul li a{
     padding-bottom: 0.5rem;
 }
 
+/* .header .drop{
+    color: #ffc107;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 5.5rem;
+} */
 .header .icons div{
     color: #ffc107;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 2rem;
 }
 

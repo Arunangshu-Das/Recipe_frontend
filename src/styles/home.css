@@ -32,3 +32,47 @@
     padding: 1rem 0;
     color: #fff;
   }
+
+  .heading{
+    text-align: center;
+    color: #000;
+    padding-bottom: 3.5rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+
+  .heading span{
+    color: #ffc107;
+    text-transform: uppercase;
+  }
+
+
+  /* recipe menu */
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: 0.2rem solid #ffc107;
+  }
+  
+  .menu .box-container .box img {
+    height: 10rem;
+    border-radius: 50%;
+  }
+  
+  .menu .box-container .box h3 {
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  
+  
+  .menu .box-container .box:hover {
+    background: #443300;
+    transition: 0.5s;
+  }

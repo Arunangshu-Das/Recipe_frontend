@@ -4,6 +4,7 @@ import '../styles/home.css'
 
 const Home = () => {
   return (
+    <>
       <section className='home' id='home'>
         <div className='content'>
           <h3>
@@ -13,6 +14,19 @@ const Home = () => {
           {/* <Link to=''>Explore now</Link> */}
         </div>
       </section>
+      <section className='menu'id='menu'>
+        <h1 className='heading'>
+          Our <span>Recipes</span> 
+        </h1>
+        <div className='box-container'>
+          <div className='box'>
+            <img src='' alt=''/>
+            <h3>recipe</h3>
+            <button>Read More</button>
+          </div>
+        </div>
+      </section>
+      </>
   )
 }
 
