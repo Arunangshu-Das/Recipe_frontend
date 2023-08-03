@@ -20,6 +20,8 @@ const Navbar = () => {
     toast.success("Logged out")
     navigate('/');
   }
+
+  
   return (
     <div>
       {/* logo part */}
@@ -32,6 +34,7 @@ const Navbar = () => {
         {/* menu  part */}
         <div className="navbar" ref={navRef}>
           {localStorage.getItem("auth") ? (
+            <div className="nav1">
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -43,6 +46,15 @@ const Navbar = () => {
                 <Link to="/search">Search</Link>
               </li>
             </ul>
+            <ul className="user">
+            <li>
+              <NavDropdown title={user && user.user.firstname}>
+                <NavDropdown.Item>DashBoard</NavDropdown.Item>
+                <NavDropdown.Item onClick={logOut}>Logout</NavDropdown.Item>
+              </NavDropdown>
+              </li>
+            </ul>
+            </div>
           ) : (
             <ul>
               <li>
@@ -59,17 +71,11 @@ const Navbar = () => {
               </li>
             </ul>
           )}
+
         </div>
-        {/* <div className="drop">
-          <NavDropdown title="user-name">
-            <NavDropdown.Item>Logout</NavDropdown.Item>
-          </NavDropdown>
-        </div> */}
+
         <div className="icons">
-          <NavDropdown title={"anik"}>
-            <NavDropdown.Item>DashBoard</NavDropdown.Item>
-            <NavDropdown.Item onClick={logOut}>Logout</NavDropdown.Item>
-          </NavDropdown>
+
           <div className="fas fa-bars" id="menu-btn" onClick={navHandler}></div>
         </div>
       </div>
