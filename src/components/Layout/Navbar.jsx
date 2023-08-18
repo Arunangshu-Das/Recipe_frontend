@@ -21,6 +21,10 @@ const Navbar = () => {
     navigate('/');
   }
 
+  const goToDashboard = () =>{
+    navigate('/dashboard')
+  }
+
   
   return (
     <div>
@@ -49,7 +53,7 @@ const Navbar = () => {
             <ul className="user">
             <li>
               <NavDropdown title={user && user.user.firstname}>
-                <NavDropdown.Item>DashBoard</NavDropdown.Item>
+                <NavDropdown.Item onClick={goToDashboard}>DashBoard</NavDropdown.Item>
                 <NavDropdown.Item onClick={logOut}>Logout</NavDropdown.Item>
               </NavDropdown>
               </li>

@@ -9,6 +9,7 @@ import Search from "./pages/Search";
 import ErrorPage from "./pages/ErrorPage";
 import Upload from "./pages/Upload";
 import { Toaster } from 'react-hot-toast';
+import Dashboard from "./pages/Dashboard";
 const App = () => {
   return (
     <div>
@@ -21,7 +22,8 @@ const App = () => {
         <Route path='/search' element={<Search/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/upload' element={<Upload/>}/>
-        <Route path='/errorpage' element={<ErrorPage/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
       </Routes>
     </div>
   );

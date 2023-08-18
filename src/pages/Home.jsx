@@ -14,11 +14,24 @@ const Home = () => {
           {/* <Link to=''>Explore now</Link> */}
         </div>
       </section>
+
+      {/* cards */}
       <section className='menu'id='menu'>
         <h1 className='heading'>
           Our <span>Recipes</span> 
         </h1>
         <div className='box-container'>
+          <div className='box'>
+            <img src='' alt=''/>
+            <h3>recipe</h3>
+            <button>Read More</button>
+          </div>
+
+          <div className='box'>
+            <img src='' alt=''/>
+            <h3>recipe</h3>
+            <button>Read More</button>
+          </div>
           <div className='box'>
             <img src='' alt=''/>
             <h3>recipe</h3>
