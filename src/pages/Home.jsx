@@ -1,8 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/home.css'
 
 const Home = () => {
+
+  useEffect(()=>{
+    async function fetchData(e) {
+
+    }
+  })
   
   return (
     <>
@@ -22,6 +28,7 @@ const Home = () => {
           Our <span>Recipes</span> 
         </h1>
         <div className='box-container'>
+        {}
           <div className='box'>
             <img src='' alt=''/>
             <h3>recipe</h3>

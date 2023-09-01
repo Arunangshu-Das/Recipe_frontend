@@ -18,7 +18,7 @@
     max-width: 600px;
     margin: 10% auto;
     padding: 20px;
-    background-color: #c1690c;
+    /* background-color: #c1690c; */
     border-radius: 10px;
     border: 2px solid #ffc107;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,7 @@
   h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
   }
   
   /* Style the form-box */
@@ -48,6 +48,17 @@
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ffc107;
+    border-radius: 4px;
+  }
+
+  input[type='file'] {
+    width: 100%;
+    max-width: 200px; /* Adjust the width as needed */
+    margin-right: 320px;
+    margin-bottom: 15px;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    padding: 5px;
     border-radius: 4px;
   }
   
