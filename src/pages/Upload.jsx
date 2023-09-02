@@ -22,7 +22,9 @@ const Upload = () => {
       formData.append("cloud_name","dd1am9vxu")
       const uploadResult = await axios.post("https://api.cloudinary.com/v1_1/dd1am9vxu/image/upload",formData)
       .then(res=>{
+        console.log(res.data.secure_url)
         return res.data.secure_url;
+    
       })
       .catch(err=>{
         console.log(err)
@@ -36,7 +38,7 @@ const Upload = () => {
         desc: desc,
         taste: taste,
         postedon: postedon,
-        imagelink: uploadResult.secure_url,
+        imagelink: await uploadResult,
       })
       if(res.data.success){
         toast.success("Recipe Uploaded");

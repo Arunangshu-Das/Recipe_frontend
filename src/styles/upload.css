@@ -65,6 +65,7 @@
   /* Style the submit button */
   button{
     background-color: #fff;
+    color: #000;
     color: #ffc107;
     border: 1px solid #ffc107;
     padding: 10px 40px;
