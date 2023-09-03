@@ -10,6 +10,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Upload from "./pages/Upload";
 import { Toaster } from 'react-hot-toast';
 import Dashboard from "./pages/Dashboard";
+import RecipeDetails from './pages/RecipeDetails'
 const App = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/upload' element={<Upload/>}/>
         <Route path='*' element={<ErrorPage/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path="/recipedetails" element={<RecipeDetails/>}/>
       </Routes>
     </div>
   );

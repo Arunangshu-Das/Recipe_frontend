@@ -22,16 +22,11 @@ const Upload = () => {
       formData.append("cloud_name","dd1am9vxu")
       const uploadResult = await axios.post("https://api.cloudinary.com/v1_1/dd1am9vxu/image/upload",formData)
       .then(res=>{
-        console.log(res.data.secure_url)
         return res.data.secure_url;
-    
       })
       .catch(err=>{
         console.log(err)
-        throw new Error("Image upload failed");
       })
-
-      console.log(uploadResult)
 
       const res = await axios.post("https://receipe-zd4n.onrender.com/newreceipe",{
         name: name,

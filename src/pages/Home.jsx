@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../styles/home.css'
 import axios from 'axios'
 
 const Home = () => {
   const [items,setItems] = useState([]);
   // const [limit,setLimit] = useState(6);
+  const navigate = useNavigate();
 
   useEffect(()=>{
     async function fetchdata(){
@@ -26,6 +27,11 @@ const Home = () => {
   }
   fetchdata();
   },[])
+
+  const handleClick = (itemId) =>{
+    navigate('/recipedetails',{state: {value: itemId,items}})
+    console.log(itemId)
+  }
   
   return (
     <>
@@ -56,10 +62,10 @@ const Home = () => {
           <div className='box' key={item.id}>
             <img src={item.image_url} alt=''/>
             <h3>{item.name}</h3>
-            <button key={item.rid}>Read More</button>
+            <button onClick={() => handleClick(item.rid)} key={item.rid}>Read More</button>
           </div>
           ))
-          )}
+        )}
         </div>
 
       </section>
