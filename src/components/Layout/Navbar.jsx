@@ -13,6 +13,7 @@ const Navbar = () => {
   const user = JSON.parse(localStorage.getItem("auth"));
   console.log(user);
 
+  const userName = user && user.user && user.user.firstname;
   const navigate = useNavigate();
 
   const logOut = () => {
@@ -52,7 +53,7 @@ const Navbar = () => {
             </ul>
             <ul className="user">
             <li>
-              <NavDropdown title={user && user.user.firstname}>
+              <NavDropdown title={userName}>
                 <NavDropdown.Item onClick={goToDashboard}>DashBoard</NavDropdown.Item>
                 <NavDropdown.Item onClick={logOut}>Logout</NavDropdown.Item>
               </NavDropdown>

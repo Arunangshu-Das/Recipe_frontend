@@ -8,6 +8,8 @@ const Home = () => {
   // const [limit,setLimit] = useState(6);
   const navigate = useNavigate();
 
+  const userData = JSON.parse(localStorage.getItem("auth"));
+
   useEffect(()=>{
     async function fetchdata(){
     try{
@@ -60,8 +62,9 @@ const Home = () => {
           ) : (
         items.map((item)=>(
           <div className='box' key={item.id}>
-            <img src={item.image_url} alt=''/>
+            <img src={item.imagelink} alt=''/>
             <h3>{item.name}</h3>
+            {/* <h8>by {userData.user.firstname}</h8> */}
             <button onClick={() => handleClick(item.rid)} key={item.rid}>Read More</button>
           </div>
           ))
