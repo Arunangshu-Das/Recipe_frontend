@@ -11,6 +11,7 @@ import Upload from "./pages/Upload";
 import { Toaster } from 'react-hot-toast';
 import Dashboard from "./pages/Dashboard";
 import RecipeDetails from './pages/RecipeDetails'
+import Searchresult from "./pages/Searchresult";
 const App = () => {
   return (
     <div>
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='*' element={<ErrorPage/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path="/recipedetails" element={<RecipeDetails/>}/>
+        <Route path="/searchresult" element={<Searchresult/>}/>
       </Routes>
     </div>
   );

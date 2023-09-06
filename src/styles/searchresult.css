@@ -1,0 +1,42 @@
+.box-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Gap between cards */
+  }
+  
+  .menu .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border: 0.2rem solid #ffc107;
+    background-color: #fff; /* Set a background color */
+    border-radius: 1rem; /* Add rounded corners */
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transitions */
+  }
+  
+  .menu .box-container .box img {
+    height: 8rem;
+    width: 8rem; /* Set a fixed width */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 50%;
+  }
+  
+  .menu .box-container .box h3 {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin: 0; /* Remove default margin */
+  }
+  .menu .box-container .box h8 {
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    margin: 0; /* Remove default margin */
+  } 
+  
+  .menu .box-container .box:hover {
+    background: #443300;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: translateY(-0.2rem); /* Add a slight lift effect */
+  }

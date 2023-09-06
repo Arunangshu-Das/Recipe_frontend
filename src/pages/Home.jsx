@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Home = () => {
   const [items,setItems] = useState([]);
-  // const [limit,setLimit] = useState(6);
+  const [limit,setLimit] = useState(6);
   const navigate = useNavigate();
 
   const userData = JSON.parse(localStorage.getItem("auth"));
@@ -29,6 +29,10 @@ const Home = () => {
   }
   fetchdata();
   },[])
+
+  const loadMore = () =>{
+    setLimit((value)=> value + 6 )
+  }
 
   const handleClick = (itemId) =>{
     navigate('/recipedetails',{state: {value: itemId,items}})
@@ -60,7 +64,7 @@ const Home = () => {
               </div>
             </div>
           ) : (
-        items.map((item)=>(
+        items.slice(0,limit).map((item)=>(
           <div className='box' key={item.id}>
             <img src={item.imagelink} alt=''/>
             <h3>{item.name}</h3>
@@ -70,6 +74,12 @@ const Home = () => {
           ))
         )}
         </div>
+          <div className='loadcontainer'>
+            <div className='btnload' onClick={loadMore}>Load More</div>
+          </div>
+      </section>
+
+      <section className='reviews'>
 
       </section>
       </>

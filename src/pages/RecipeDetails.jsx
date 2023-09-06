@@ -19,9 +19,10 @@ const RecipeDetails = () => {
  
   const [activeBtn, setActiveBtn] = useState("none");
 
-  //set rating
+  //set review
 
   const [rating, setRating] = useState(null);
+  const [review, setReview] = useState('');
 
   const userData = JSON.parse(localStorage.getItem("auth"));
 
@@ -63,7 +64,8 @@ const RecipeDetails = () => {
   // Send rating value
   const sendRatingToBackend = async (ratingValue) => {
     try {
-      const res = await axios.post('https://receipe-zd4n.onrender.com/updaterate', {
+      const res = await axios.post('https://receipe-zd4n.onrender.com/updateratereceipe', {
+        rid: selectedItem.rid,
         uid: userData.user.uid,
         newRating: ratingValue 
       });
@@ -121,6 +123,7 @@ const RecipeDetails = () => {
           <br/>
           <h4>Steps</h4>
           <p>{selectedItem.desc}</p>
+          <input type='textarea' name='review' value={review} onChange={()=>setReview(review)}/>
         </div>
       </div>
     </>
