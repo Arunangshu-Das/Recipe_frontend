@@ -69,12 +69,14 @@ img {
 /* Adjusted margin for the left element */
 .left {
   margin-right: 10%; /* Adjusted margin for better layout */
+  /* flex-basis: 40%; */
 }
 
 /* Adjusted margin for the right element */
 .right {
   margin-right: 0; /* Adjusted margin for better layout */
   margin-bottom: 20%;
+  /* flex-basis: 60%; */
 }
 
 /* Hide radio inputs (if you plan to use them for styling) */

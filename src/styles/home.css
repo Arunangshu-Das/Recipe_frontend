@@ -116,4 +116,249 @@
     background-color: #c1690c; 
   }
 
+
   
+.star-rating {
+  font-size: 24px;
+  color: #ffd700;
+}
+
+
+.like-dislike {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.like-icon,
+.dislike-icon {
+  margin: 5px 5px 5px;
+  color: #007bff; 
+}
+
+
+/* contact form */
+/* ContactForm.css */
+
+/* .contact-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+} */
+
+/* You can add additional styling as needed */
+
+#testimonials {
+  background-color: #ef8172;
+  width: 100%;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+/* caraseoul image */
+.profile-header-container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-header-img {
+  padding: 54px;
+  
+}
+
+.profile-header-img > img.img-circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #51D2B7;
+  border-radius: 100%;
+}
+
+.profile-header {
+  margin-top: 43px;
+}
+
+
+/* contact */
+.contact-container{
+  width: 80%;
+  margin: 80px;
+}
+.contact-box{
+  display: flex ;
+  border: 2px solid #ffc107;
+}
+
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px ;
+}
+
+.contact-right{
+  flex-basis: 40%;
+  padding: 50px;
+  background: #c1690c;
+  color: #ffc107;
+}
+
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group{
+  flex-basis: 45%;
+}
+
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+textarea{
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label{
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-btn{
+  width: 100px;
+  background-color: #c1690c;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.conat
+tr td:first-child{
+  padding-right: 20px;
+}
+
+tr td{
+  padding-top: 20px;
+}
+
+
+/* footer */
+
+.footer{
+  background: #c1690c;
+  color: #ffd700;
+  height: 100px;
+}
+
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons Link{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons Link i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.footer ul{
+  display: flex;
+  justify-content: center;
+}
+.footer ul li Link{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerBottom{
+  text-align: center;
+}
+

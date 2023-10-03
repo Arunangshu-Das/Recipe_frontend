@@ -20,10 +20,7 @@ const Searchresult = () => {
             console.log(typeof searchQuery === 'string')
 
             const res = await axios.get('https://receipe-zd4n.onrender.com/searchreceipe', {
-            "rname": '\"'+searchQuery+'\"',
-
-
-  
+            "rname": searchQuery,
           });
 
   

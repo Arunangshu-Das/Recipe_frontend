@@ -13,6 +13,13 @@ import Dashboard from "./pages/Dashboard";
 import RecipeDetails from './pages/RecipeDetails'
 import Searchresult from "./pages/Searchresult";
 const App = () => {
+
+  setInterval(()=>{
+    document.title = 'Recipsy - Make your food delicious'
+  },2500)
+  setInterval(()=>{
+    document.title = 'Enjoy every bite'
+  },2000)
   return (
     <div>
       <Navbar/>
