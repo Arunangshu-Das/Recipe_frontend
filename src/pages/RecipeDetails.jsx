@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/recipedetails.css";
 import axios from "axios";
@@ -11,8 +11,21 @@ const RecipeDetails = () => {
   const items = location.state && location.state.items;
   console.log(items);
 
-  const selectedItem = items.find((item) => item.rid === itemId);
-  console.log(selectedItem);
+  const [selectedItem, setSelectedItem] = useState(null);
+  useEffect(() => {
+    // Check if items is defined and contains data
+    if (itemId && itemId.length > 0) {
+      // Use the itemId to find the selected item
+      const foundItem = items.find((item) => item.rid === itemId);
+      if (foundItem) {
+        console.log('recieved id',foundItem)
+        setSelectedItem(foundItem);
+      }
+    }
+  }, [items, itemId]);
+
+  // const selectedItem = items.find((item) => item.rid === itemId);
+  // console.log(selectedItem);
 
   //like and dislike buton
 
@@ -81,6 +94,10 @@ const RecipeDetails = () => {
       console.error(err);
     }
   };
+
+  if (!selectedItem) {
+    return <div>Loading...</div>; // Or any other appropriate message or loading state
+  }
 
   return (
     <>

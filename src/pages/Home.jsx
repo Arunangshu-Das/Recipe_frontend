@@ -102,8 +102,8 @@ const Home = () => {
       </section>
 <section className='review'>
 <h1 className='heading'>
-          App <span>Review</span> 
-        </h1>
+        App <span>Review</span> 
+</h1>
 
     <div className='container-fluid'>
 <div id="carouselExampleCaptions" className="carousel slide">
@@ -170,7 +170,7 @@ const Home = () => {
 
 <section className='contact'>
   <div className='contact-container'>
-    <h1>Connect with us</h1>
+    <h1 className='heading'><span>Connect</span> with us</h1>
     <div className='contact-box'>
      <div className="contact-left">
       <h3>Send your request</h3>
@@ -234,7 +234,7 @@ const Home = () => {
           </div>
           <div className="footerBottom">
             <p>Copyright &copy;2023; All rights reserved By <span className="company">Recipesy</span></p>
-          </div>
+        </div>
 
 </div>
 
