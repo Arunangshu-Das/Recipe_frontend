@@ -44,7 +44,7 @@ const Upload = () => {
     }
   }
   return (
-    <div className='container'>
+    <div className='container1'>
       <form className='uploadform' onSubmit={handleSubmit}>
         <h1>Create Your Recipe</h1>
         <div className='form-box'>

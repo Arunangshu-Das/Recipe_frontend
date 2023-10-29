@@ -51,6 +51,11 @@ body {
   cursor: pointer; /* Added cursor pointer for buttons */
 }
 
+.steps{
+  content: "\2022"; 
+  margin-right: 8px;
+}
+
 /* Style the active like button */
 .like-active {
   background-color: #c1690c;
@@ -61,10 +66,6 @@ body {
   background-color: #ffc107;
 }
 
-/* Style images */
-img {
-  max-width: 100%; /* Ensure images don't exceed their container */
-}
 
 /* Adjusted margin for the left element */
 .left {
